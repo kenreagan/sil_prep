@@ -1,0 +1,1097 @@
+INFO 2025-06-05 20:51:55,324 autoreload 64783 140704515791296 Watching for file changes with StatReloader
+INFO 2025-06-05 20:52:40,319 autoreload 64932 140704515791296 Watching for file changes with StatReloader
+INFO 2025-06-05 20:54:30,906 autoreload 64932 140704515791296 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-05 20:54:32,096 autoreload 65267 140704515791296 Watching for file changes with StatReloader
+INFO 2025-06-05 20:54:58,412 autoreload 65267 140704515791296 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-05 20:54:58,866 autoreload 65349 140704515791296 Watching for file changes with StatReloader
+INFO 2025-06-05 20:56:33,167 autoreload 65650 140704515791296 Watching for file changes with StatReloader
+INFO 2025-06-05 21:02:33,499 autoreload 65650 140704515791296 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-05 21:02:34,690 autoreload 66734 140704515791296 Watching for file changes with StatReloader
+INFO 2025-06-05 22:37:03,652 autoreload 68273 140704515791296 Watching for file changes with StatReloader
+ERROR 2025-06-05 22:37:10,167 log 68273 123145499025408 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/messages/middleware.py", line 12, in process_request
+    request._messages = default_storage(request)
+                        ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/messages/storage/__init__.py", line 12, in default_storage
+    return import_string(settings.MESSAGE_STORAGE)(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/messages/storage/fallback.py", line 17, in __init__
+    storage_class(*args, **kwargs) for storage_class in self.storage_classes
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/messages/storage/cookie.py", line 92, in __init__
+    self.signer = signing.get_cookie_signer(salt=self.key_salt)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/core/signing.py", line 112, in get_cookie_signer
+    key=_cookie_signer_key(settings.SECRET_KEY),
+                           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/conf/__init__.py", line 90, in __getattr__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.
+ERROR 2025-06-05 22:37:10,179 basehttp 68273 123145499025408 "GET / HTTP/1.1" 500 145
+INFO 2025-06-05 22:38:12,133 autoreload 68273 140704515791296 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-05 22:38:12,916 autoreload 68478 140704515791296 Watching for file changes with StatReloader
+WARNING 2025-06-05 22:38:24,035 log 68478 123145351012352 Not Found: /
+WARNING 2025-06-05 22:38:24,036 basehttp 68478 123145351012352 "GET / HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:07,420 log 68478 123145351012352 Not Found: /categories/
+WARNING 2025-06-05 22:39:07,422 basehttp 68478 123145351012352 "GET /categories/ HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:11,191 log 68478 123145351012352 Not Found: /categories
+WARNING 2025-06-05 22:39:11,192 basehttp 68478 123145351012352 "GET /categories HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:11,295 log 68478 123145351012352 Not Found: /favicon.ico
+WARNING 2025-06-05 22:39:11,296 basehttp 68478 123145351012352 "GET /favicon.ico HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:17,553 log 68478 123145351012352 Not Found: /
+WARNING 2025-06-05 22:39:17,554 basehttp 68478 123145351012352 "GET / HTTP/1.1" 404 179
+INFO 2025-06-05 22:39:22,962 basehttp 68478 123145351012352 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-06-05 22:39:23,007 basehttp 68478 123145351012352 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+WARNING 2025-06-05 22:39:23,053 log 68478 123145351012352 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:39:23,055 log 68478 123145367801856 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:39:23,056 basehttp 68478 123145367801856 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:23,057 basehttp 68478 123145351012352 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:23,061 log 68478 123145384591360 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:39:23,061 basehttp 68478 123145384591360 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:23,072 log 68478 123145367801856 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:39:23,073 basehttp 68478 123145367801856 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:23,074 log 68478 123145351012352 Not Found: /static/admin/css/login.css
+WARNING 2025-06-05 22:39:23,075 basehttp 68478 123145351012352 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:23,077 log 68478 123145367801856 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:39:23,078 basehttp 68478 123145367801856 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:23,080 log 68478 123145384591360 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:39:23,080 basehttp 68478 123145384591360 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+INFO 2025-06-05 22:39:28,508 basehttp 68478 123145351012352 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+WARNING 2025-06-05 22:39:28,538 log 68478 123145367801856 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:39:28,539 basehttp 68478 123145367801856 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:28,542 log 68478 123145367801856 Not Found: /static/admin/css/login.css
+WARNING 2025-06-05 22:39:28,544 log 68478 123145384591360 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:39:28,545 log 68478 123145351012352 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:39:28,545 basehttp 68478 123145367801856 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:28,546 basehttp 68478 123145384591360 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:28,549 log 68478 123145401380864 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:39:28,550 basehttp 68478 123145351012352 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:28,552 log 68478 123145418170368 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:39:28,554 log 68478 123145434959872 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:39:28,554 basehttp 68478 123145434959872 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:28,555 basehttp 68478 123145418170368 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:28,556 basehttp 68478 123145401380864 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:28,571 log 68478 123145367801856 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:39:28,571 basehttp 68478 123145367801856 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+INFO 2025-06-05 22:39:33,353 basehttp 68478 123145351012352 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+WARNING 2025-06-05 22:39:33,378 log 68478 123145384591360 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:39:33,379 basehttp 68478 123145384591360 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:33,382 log 68478 123145401380864 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:39:33,384 log 68478 123145434959872 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:39:33,385 basehttp 68478 123145434959872 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:33,386 log 68478 123145367801856 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:39:33,388 log 68478 123145384591360 Not Found: /static/admin/css/login.css
+WARNING 2025-06-05 22:39:33,388 basehttp 68478 123145367801856 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:33,389 basehttp 68478 123145401380864 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:33,392 log 68478 123145418170368 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:39:33,394 log 68478 123145351012352 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:39:33,395 basehttp 68478 123145384591360 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:33,396 log 68478 123145434959872 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:39:33,398 basehttp 68478 123145418170368 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:33,399 basehttp 68478 123145351012352 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:33,400 basehttp 68478 123145434959872 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+INFO 2025-06-05 22:39:34,636 basehttp 68478 123145351012352 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+WARNING 2025-06-05 22:39:34,663 log 68478 123145367801856 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:39:34,663 basehttp 68478 123145367801856 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:34,666 log 68478 123145401380864 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:39:34,666 basehttp 68478 123145401380864 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:34,668 log 68478 123145418170368 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:39:34,670 log 68478 123145351012352 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:39:34,671 log 68478 123145384591360 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:39:34,678 basehttp 68478 123145384591360 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:34,672 log 68478 123145434959872 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:39:34,681 basehttp 68478 123145434959872 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:34,676 log 68478 123145367801856 Not Found: /static/admin/css/login.css
+WARNING 2025-06-05 22:39:34,679 basehttp 68478 123145418170368 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:34,681 basehttp 68478 123145351012352 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:39:34,682 basehttp 68478 123145367801856 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+INFO 2025-06-05 22:40:02,595 basehttp 68478 123145351012352 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+WARNING 2025-06-05 22:40:02,623 log 68478 123145401380864 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:40:02,623 basehttp 68478 123145401380864 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:02,625 log 68478 123145401380864 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:40:02,626 log 68478 123145384591360 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:40:02,627 basehttp 68478 123145384591360 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:02,630 log 68478 123145367801856 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:40:02,631 basehttp 68478 123145367801856 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:02,633 log 68478 123145351012352 Not Found: /static/admin/css/login.css
+WARNING 2025-06-05 22:40:02,634 basehttp 68478 123145351012352 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:02,636 log 68478 123145418170368 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:40:02,637 log 68478 123145434959872 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:40:02,638 basehttp 68478 123145401380864 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:02,638 basehttp 68478 123145418170368 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:02,639 basehttp 68478 123145434959872 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:02,651 log 68478 123145384591360 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:40:02,652 basehttp 68478 123145384591360 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+INFO 2025-06-05 22:40:06,224 basehttp 68478 123145351012352 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-06-05 22:40:06,238 basehttp 68478 123145351012352 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+WARNING 2025-06-05 22:40:06,293 log 68478 123145367801856 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:40:06,294 basehttp 68478 123145367801856 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:06,303 log 68478 123145401380864 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:40:06,303 basehttp 68478 123145401380864 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:06,305 log 68478 123145384591360 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:40:06,306 basehttp 68478 123145384591360 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:06,308 log 68478 123145351012352 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:40:06,309 basehttp 68478 123145351012352 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:06,311 log 68478 123145367801856 Not Found: /static/admin/css/login.css
+WARNING 2025-06-05 22:40:06,312 basehttp 68478 123145367801856 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:06,315 log 68478 123145418170368 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:40:06,315 basehttp 68478 123145418170368 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:06,317 log 68478 123145434959872 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:40:06,318 basehttp 68478 123145434959872 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:06,324 log 68478 123145401380864 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:40:06,326 basehttp 68478 123145401380864 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:06,328 log 68478 123145384591360 Not Found: /static/admin/css/login.css
+WARNING 2025-06-05 22:40:06,329 basehttp 68478 123145384591360 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:06,330 log 68478 123145367801856 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:40:06,335 basehttp 68478 123145367801856 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+INFO 2025-06-05 22:40:07,591 basehttp 68478 123145351012352 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-06-05 22:40:07,603 basehttp 68478 123145351012352 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+WARNING 2025-06-05 22:40:07,644 log 68478 123145418170368 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:40:07,646 log 68478 123145401380864 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:40:07,646 basehttp 68478 123145401380864 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:07,648 log 68478 123145434959872 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:40:07,649 basehttp 68478 123145434959872 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:07,651 basehttp 68478 123145418170368 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:07,717 log 68478 123145384591360 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:40:07,718 basehttp 68478 123145384591360 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:07,719 log 68478 123145401380864 Not Found: /static/admin/css/login.css
+WARNING 2025-06-05 22:40:07,720 basehttp 68478 123145401380864 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:07,723 log 68478 123145434959872 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:40:07,724 log 68478 123145367801856 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:40:07,726 basehttp 68478 123145434959872 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:07,727 basehttp 68478 123145367801856 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+INFO 2025-06-05 22:40:12,942 basehttp 68478 123145351012352 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-06-05 22:40:12,954 basehttp 68478 123145351012352 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+WARNING 2025-06-05 22:40:12,984 log 68478 123145418170368 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:40:12,986 log 68478 123145384591360 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:40:12,989 log 68478 123145401380864 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:40:12,991 log 68478 123145434959872 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:40:12,993 log 68478 123145367801856 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:40:12,994 basehttp 68478 123145418170368 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:12,995 basehttp 68478 123145384591360 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:12,996 basehttp 68478 123145401380864 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:12,998 log 68478 123145351012352 Not Found: /static/admin/css/login.css
+WARNING 2025-06-05 22:40:13,000 log 68478 123145418170368 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:40:13,000 basehttp 68478 123145367801856 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:13,001 basehttp 68478 123145434959872 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:13,007 basehttp 68478 123145418170368 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:13,008 basehttp 68478 123145351012352 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:40:13,034 log 68478 123145384591360 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:40:13,035 basehttp 68478 123145384591360 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+INFO 2025-06-05 22:41:52,416 autoreload 69159 140704515791296 Watching for file changes with StatReloader
+INFO 2025-06-05 22:41:58,552 basehttp 69159 123145470128128 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-06-05 22:41:58,601 basehttp 69159 123145470128128 "GET /admin/ HTTP/1.1" 200 10401
+WARNING 2025-06-05 22:41:58,644 log 69159 123145470128128 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:41:58,646 basehttp 69159 123145470128128 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:41:58,656 log 69159 123145486917632 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:41:58,657 basehttp 69159 123145486917632 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:41:58,669 log 69159 123145503707136 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:41:58,670 basehttp 69159 123145503707136 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:41:58,696 log 69159 123145486917632 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:41:58,703 basehttp 69159 123145486917632 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:41:58,701 log 69159 123145470128128 Not Found: /static/admin/css/dashboard.css
+WARNING 2025-06-05 22:41:58,708 basehttp 69159 123145470128128 "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:41:58,705 log 69159 123145520496640 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:41:58,711 basehttp 69159 123145520496640 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:41:58,699 log 69159 123145503707136 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:41:58,715 basehttp 69159 123145503707136 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:41:58,743 log 69159 123145486917632 Not Found: /favicon.ico
+INFO 2025-06-05 22:41:58,743 basehttp 69159 123145486917632 - Broken pipe from ('127.0.0.1', 58786)
+INFO 2025-06-05 22:42:04,986 basehttp 69159 123145470128128 "GET /admin/ HTTP/1.1" 200 10401
+WARNING 2025-06-05 22:42:05,046 log 69159 123145520496640 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:42:05,047 log 69159 123145503707136 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:42:05,049 log 69159 123145470128128 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:42:05,050 basehttp 69159 123145520496640 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:05,051 basehttp 69159 123145470128128 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:05,053 log 69159 123145520496640 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:42:05,059 basehttp 69159 123145520496640 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:05,056 log 69159 123145486917632 Not Found: /static/admin/css/dashboard.css
+WARNING 2025-06-05 22:42:05,060 basehttp 69159 123145503707136 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:05,061 log 69159 123145537286144 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:42:05,058 log 69159 123145470128128 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:42:05,066 basehttp 69159 123145486917632 "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:05,067 basehttp 69159 123145537286144 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:05,067 basehttp 69159 123145470128128 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+INFO 2025-06-05 22:42:12,288 basehttp 69159 123145470128128 "GET /admin/customer_order/category/ HTTP/1.1" 200 12545
+WARNING 2025-06-05 22:42:12,334 log 69159 123145503707136 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:42:12,335 basehttp 69159 123145503707136 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,339 log 69159 123145486917632 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:42:12,341 log 69159 123145537286144 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:42:12,364 basehttp 69159 123145537286144 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,351 log 69159 123145520496640 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:42:12,353 log 69159 123145554075648 Not Found: /static/admin/css/changelists.css
+WARNING 2025-06-05 22:42:12,368 basehttp 69159 123145554075648 "GET /static/admin/css/changelists.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,361 basehttp 69159 123145486917632 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,370 log 69159 123145554075648 Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2025-06-05 22:42:12,377 basehttp 69159 123145554075648 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,346 log 69159 123145470128128 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:42:12,379 log 69159 123145554075648 Not Found: /static/admin/js/urlify.js
+INFO 2025-06-05 22:42:12,375 basehttp 69159 123145503707136 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-05 22:42:12,376 basehttp 69159 123145520496640 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,372 log 69159 123145486917632 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2025-06-05 22:42:12,365 log 69159 123145537286144 Not Found: /static/admin/js/jquery.init.js
+WARNING 2025-06-05 22:42:12,383 log 69159 123145520496640 Not Found: /static/admin/js/core.js
+WARNING 2025-06-05 22:42:12,384 basehttp 69159 123145537286144 "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,385 log 69159 123145503707136 Not Found: /static/admin/js/actions.js
+WARNING 2025-06-05 22:42:12,385 basehttp 69159 123145554075648 "GET /static/admin/js/urlify.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,386 basehttp 69159 123145520496640 "GET /static/admin/js/core.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,393 log 69159 123145520496640 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:42:12,386 basehttp 69159 123145470128128 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,389 log 69159 123145537286144 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2025-06-05 22:42:12,402 basehttp 69159 123145537286144 "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,390 basehttp 69159 123145503707136 "GET /static/admin/js/actions.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,391 log 69159 123145554075648 Not Found: /static/admin/js/prepopulate.js
+WARNING 2025-06-05 22:42:12,403 basehttp 69159 123145554075648 "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,395 basehttp 69159 123145520496640 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,397 log 69159 123145470128128 Not Found: /static/admin/js/filters.js
+WARNING 2025-06-05 22:42:12,405 basehttp 69159 123145470128128 "GET /static/admin/js/filters.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,387 basehttp 69159 123145486917632 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,407 log 69159 123145503707136 Not Found: /static/admin/img/search.svg
+WARNING 2025-06-05 22:42:12,408 basehttp 69159 123145503707136 "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,417 log 69159 123145503707136 Not Found: /static/admin/js/jquery.init.js
+WARNING 2025-06-05 22:42:12,418 basehttp 69159 123145503707136 "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,421 log 69159 123145503707136 Not Found: /static/admin/js/core.js
+WARNING 2025-06-05 22:42:12,421 basehttp 69159 123145503707136 "GET /static/admin/js/core.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,431 log 69159 123145503707136 Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2025-06-05 22:42:12,431 basehttp 69159 123145503707136 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,435 log 69159 123145503707136 Not Found: /static/admin/js/actions.js
+WARNING 2025-06-05 22:42:12,435 basehttp 69159 123145503707136 "GET /static/admin/js/actions.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,439 log 69159 123145503707136 Not Found: /static/admin/js/urlify.js
+WARNING 2025-06-05 22:42:12,439 basehttp 69159 123145503707136 "GET /static/admin/js/urlify.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,445 log 69159 123145503707136 Not Found: /static/admin/js/prepopulate.js
+WARNING 2025-06-05 22:42:12,446 basehttp 69159 123145503707136 "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,458 log 69159 123145503707136 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2025-06-05 22:42:12,458 basehttp 69159 123145503707136 "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,463 log 69159 123145503707136 Not Found: /static/admin/js/filters.js
+WARNING 2025-06-05 22:42:12,465 log 69159 123145486917632 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:42:12,465 basehttp 69159 123145503707136 "GET /static/admin/js/filters.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,466 basehttp 69159 123145486917632 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:12,468 log 69159 123145503707136 Not Found: /static/admin/img/search.svg
+WARNING 2025-06-05 22:42:12,469 basehttp 69159 123145503707136 "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+INFO 2025-06-05 22:42:15,997 basehttp 69159 123145470128128 "GET /admin/customer_order/ HTTP/1.1" 200 8168
+WARNING 2025-06-05 22:42:16,046 log 69159 123145503707136 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:42:16,048 log 69159 123145520496640 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:42:16,049 basehttp 69159 123145520496640 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:16,050 log 69159 123145520496640 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:42:16,051 basehttp 69159 123145520496640 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:16,052 basehttp 69159 123145503707136 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:16,054 log 69159 123145537286144 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:42:16,055 basehttp 69159 123145537286144 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:16,057 log 69159 123145470128128 Not Found: /static/admin/css/dashboard.css
+WARNING 2025-06-05 22:42:16,057 basehttp 69159 123145470128128 "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:16,063 log 69159 123145486917632 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:42:16,064 basehttp 69159 123145486917632 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:16,067 log 69159 123145554075648 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:42:16,068 basehttp 69159 123145554075648 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:16,074 log 69159 123145503707136 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:42:16,075 basehttp 69159 123145503707136 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:16,091 log 69159 123145503707136 Not Found: /favicon.ico
+INFO 2025-06-05 22:42:16,093 basehttp 69159 123145503707136 - Broken pipe from ('127.0.0.1', 58787)
+INFO 2025-06-05 22:42:18,250 basehttp 69159 123145470128128 "GET /admin/customer_order/customer/ HTTP/1.1" 200 16408
+WARNING 2025-06-05 22:42:18,304 log 69159 123145520496640 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:42:18,305 log 69159 123145537286144 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:42:18,319 basehttp 69159 123145537286144 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,306 log 69159 123145486917632 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:42:18,321 basehttp 69159 123145486917632 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,311 log 69159 123145470128128 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:42:18,327 log 69159 123145486917632 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2025-06-05 22:42:18,309 log 69159 123145554075648 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:42:18,328 basehttp 69159 123145520496640 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,317 log 69159 123145503707136 Not Found: /static/admin/css/changelists.css
+INFO 2025-06-05 22:42:18,334 basehttp 69159 123145537286144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-05 22:42:18,335 basehttp 69159 123145470128128 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,335 basehttp 69159 123145486917632 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,337 log 69159 123145520496640 Not Found: /static/admin/js/jquery.init.js
+WARNING 2025-06-05 22:42:18,337 basehttp 69159 123145503707136 "GET /static/admin/css/changelists.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,338 basehttp 69159 123145554075648 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,340 log 69159 123145537286144 Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2025-06-05 22:42:18,349 basehttp 69159 123145537286144 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,351 log 69159 123145537286144 Not Found: /static/admin/js/filters.js
+WARNING 2025-06-05 22:42:18,342 log 69159 123145470128128 Not Found: /static/admin/js/core.js
+WARNING 2025-06-05 22:42:18,343 log 69159 123145486917632 Not Found: /static/admin/js/actions.js
+WARNING 2025-06-05 22:42:18,353 basehttp 69159 123145486917632 "GET /static/admin/js/actions.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,346 log 69159 123145503707136 Not Found: /static/admin/js/urlify.js
+WARNING 2025-06-05 22:42:18,344 basehttp 69159 123145520496640 "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,355 log 69159 123145486917632 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2025-06-05 22:42:18,351 basehttp 69159 123145537286144 "GET /static/admin/js/filters.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,355 basehttp 69159 123145470128128 "GET /static/admin/js/core.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,349 log 69159 123145554075648 Not Found: /static/admin/js/prepopulate.js
+WARNING 2025-06-05 22:42:18,356 basehttp 69159 123145503707136 "GET /static/admin/js/urlify.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,357 log 69159 123145520496640 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2025-06-05 22:42:18,359 log 69159 123145537286144 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:42:18,360 basehttp 69159 123145486917632 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,360 basehttp 69159 123145554075648 "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,362 basehttp 69159 123145520496640 "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,363 log 69159 123145503707136 Not Found: /static/admin/js/jquery.init.js
+WARNING 2025-06-05 22:42:18,364 basehttp 69159 123145537286144 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,366 log 69159 123145486917632 Not Found: /static/admin/img/search.svg
+WARNING 2025-06-05 22:42:18,369 log 69159 123145554075648 Not Found: /static/admin/img/icon-yes.svg
+WARNING 2025-06-05 22:42:18,370 basehttp 69159 123145503707136 "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,370 basehttp 69159 123145554075648 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,371 basehttp 69159 123145486917632 "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,373 log 69159 123145537286144 Not Found: /static/admin/js/core.js
+WARNING 2025-06-05 22:42:18,374 basehttp 69159 123145537286144 "GET /static/admin/js/core.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,377 log 69159 123145537286144 Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2025-06-05 22:42:18,377 basehttp 69159 123145537286144 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,380 log 69159 123145537286144 Not Found: /static/admin/js/actions.js
+WARNING 2025-06-05 22:42:18,380 basehttp 69159 123145537286144 "GET /static/admin/js/actions.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,384 log 69159 123145537286144 Not Found: /static/admin/js/urlify.js
+WARNING 2025-06-05 22:42:18,385 basehttp 69159 123145537286144 "GET /static/admin/js/urlify.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,388 log 69159 123145537286144 Not Found: /static/admin/js/prepopulate.js
+WARNING 2025-06-05 22:42:18,388 basehttp 69159 123145537286144 "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,398 log 69159 123145537286144 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2025-06-05 22:42:18,400 basehttp 69159 123145537286144 "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,403 log 69159 123145537286144 Not Found: /static/admin/js/filters.js
+WARNING 2025-06-05 22:42:18,404 log 69159 123145520496640 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:42:18,404 basehttp 69159 123145520496640 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,405 basehttp 69159 123145537286144 "GET /static/admin/js/filters.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,408 log 69159 123145537286144 Not Found: /static/admin/img/search.svg
+WARNING 2025-06-05 22:42:18,409 log 69159 123145503707136 Not Found: /static/admin/img/icon-yes.svg
+WARNING 2025-06-05 22:42:18,409 basehttp 69159 123145537286144 "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:18,410 basehttp 69159 123145503707136 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 404 179
+INFO 2025-06-05 22:42:20,295 basehttp 69159 123145470128128 "GET /admin/authtoken/ HTTP/1.1" 200 5524
+WARNING 2025-06-05 22:42:20,349 log 69159 123145537286144 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:42:20,349 basehttp 69159 123145537286144 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:20,351 log 69159 123145537286144 Not Found: /static/admin/css/dashboard.css
+WARNING 2025-06-05 22:42:20,353 log 69159 123145554075648 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:42:20,354 basehttp 69159 123145554075648 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:20,358 basehttp 69159 123145537286144 "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:20,357 log 69159 123145470128128 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:42:20,359 basehttp 69159 123145470128128 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:20,361 log 69159 123145520496640 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:42:20,362 log 69159 123145486917632 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:42:20,363 log 69159 123145503707136 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:42:20,364 basehttp 69159 123145503707136 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:20,364 basehttp 69159 123145520496640 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:20,366 basehttp 69159 123145486917632 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:20,370 log 69159 123145537286144 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:42:20,372 log 69159 123145554075648 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:42:20,374 log 69159 123145520496640 Not Found: /static/admin/css/dashboard.css
+WARNING 2025-06-05 22:42:20,375 log 69159 123145503707136 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:42:20,376 basehttp 69159 123145554075648 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:20,376 basehttp 69159 123145520496640 "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:20,377 basehttp 69159 123145537286144 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:42:20,378 basehttp 69159 123145503707136 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:12,345 log 69159 123145570865152 Not Found: /
+WARNING 2025-06-05 22:46:12,347 basehttp 69159 123145570865152 "GET / HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:12,428 log 69159 123145570865152 Not Found: /favicon.ico
+INFO 2025-06-05 22:46:12,429 basehttp 69159 123145570865152 - Broken pipe from ('127.0.0.1', 58811)
+INFO 2025-06-05 22:46:14,789 basehttp 69159 123145587654656 "GET /admin/authtoken/ HTTP/1.1" 200 5524
+WARNING 2025-06-05 22:46:14,821 log 69159 123145587654656 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:46:14,823 log 69159 123145503707136 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:46:14,828 basehttp 69159 123145503707136 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:14,823 basehttp 69159 123145587654656 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:14,825 log 69159 123145520496640 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:46:14,831 basehttp 69159 123145520496640 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:14,854 log 69159 123145503707136 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:46:14,855 basehttp 69159 123145503707136 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:14,860 log 69159 123145520496640 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:46:14,861 basehttp 69159 123145520496640 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:14,864 log 69159 123145503707136 Not Found: /static/admin/css/dashboard.css
+WARNING 2025-06-05 22:46:14,865 basehttp 69159 123145503707136 "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:14,867 log 69159 123145587654656 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:46:14,867 basehttp 69159 123145587654656 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:14,895 log 69159 123145520496640 Not Found: /favicon.ico
+INFO 2025-06-05 22:46:14,897 basehttp 69159 123145520496640 - Broken pipe from ('127.0.0.1', 58815)
+INFO 2025-06-05 22:46:17,314 basehttp 69159 123145587654656 "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 11120
+WARNING 2025-06-05 22:46:17,371 log 69159 123145503707136 Not Found: /static/admin/css/base.css
+WARNING 2025-06-05 22:46:17,372 basehttp 69159 123145503707136 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,373 log 69159 123145503707136 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2025-06-05 22:46:17,374 basehttp 69159 123145503707136 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,378 log 69159 123145503707136 Not Found: /static/admin/js/jquery.init.js
+WARNING 2025-06-05 22:46:17,381 log 69159 123145587654656 Not Found: /static/admin/css/dark_mode.css
+WARNING 2025-06-05 22:46:17,382 basehttp 69159 123145587654656 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,384 log 69159 123145587654656 Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2025-06-05 22:46:17,384 basehttp 69159 123145587654656 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,386 log 69159 123145587654656 Not Found: /static/admin/js/actions.js
+WARNING 2025-06-05 22:46:17,386 basehttp 69159 123145587654656 "GET /static/admin/js/actions.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,388 log 69159 123145587654656 Not Found: /static/admin/js/urlify.js
+WARNING 2025-06-05 22:46:17,389 basehttp 69159 123145587654656 "GET /static/admin/js/urlify.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,390 log 69159 123145587654656 Not Found: /static/admin/js/prepopulate.js
+WARNING 2025-06-05 22:46:17,391 basehttp 69159 123145503707136 "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,392 log 69159 123145503707136 Not Found: /static/admin/js/core.js
+WARNING 2025-06-05 22:46:17,394 basehttp 69159 123145503707136 "GET /static/admin/js/core.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,396 log 69159 123145503707136 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2025-06-05 22:46:17,397 basehttp 69159 123145503707136 "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,398 log 69159 123145503707136 Not Found: /static/admin/js/filters.js
+WARNING 2025-06-05 22:46:17,399 basehttp 69159 123145503707136 "GET /static/admin/js/filters.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,401 log 69159 123145503707136 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:46:17,401 basehttp 69159 123145587654656 "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,403 log 69159 123145520496640 Not Found: /static/admin/js/theme.js
+WARNING 2025-06-05 22:46:17,404 basehttp 69159 123145520496640 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,405 basehttp 69159 123145503707136 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,408 log 69159 123145537286144 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2025-06-05 22:46:17,408 basehttp 69159 123145537286144 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,413 log 69159 123145520496640 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2025-06-05 22:46:17,414 log 69159 123145554075648 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2025-06-05 22:46:17,418 log 69159 123145570865152 Not Found: /static/admin/css/changelists.css
+WARNING 2025-06-05 22:46:17,419 basehttp 69159 123145554075648 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,420 basehttp 69159 123145520496640 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,421 basehttp 69159 123145570865152 "GET /static/admin/css/changelists.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,424 log 69159 123145503707136 Not Found: /static/admin/img/search.svg
+WARNING 2025-06-05 22:46:17,425 basehttp 69159 123145503707136 "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,435 log 69159 123145537286144 Not Found: /static/admin/js/jquery.init.js
+WARNING 2025-06-05 22:46:17,435 basehttp 69159 123145537286144 "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,439 log 69159 123145554075648 Not Found: /static/admin/js/core.js
+WARNING 2025-06-05 22:46:17,439 basehttp 69159 123145554075648 "GET /static/admin/js/core.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,445 log 69159 123145520496640 Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2025-06-05 22:46:17,446 basehttp 69159 123145520496640 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,450 log 69159 123145570865152 Not Found: /static/admin/js/actions.js
+WARNING 2025-06-05 22:46:17,451 basehttp 69159 123145570865152 "GET /static/admin/js/actions.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,454 log 69159 123145503707136 Not Found: /static/admin/js/urlify.js
+WARNING 2025-06-05 22:46:17,455 basehttp 69159 123145503707136 "GET /static/admin/js/urlify.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,458 log 69159 123145537286144 Not Found: /static/admin/js/prepopulate.js
+WARNING 2025-06-05 22:46:17,459 basehttp 69159 123145537286144 "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,465 log 69159 123145554075648 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2025-06-05 22:46:17,465 basehttp 69159 123145554075648 "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,473 log 69159 123145520496640 Not Found: /static/admin/js/filters.js
+WARNING 2025-06-05 22:46:17,475 basehttp 69159 123145520496640 "GET /static/admin/js/filters.js HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,481 log 69159 123145570865152 Not Found: /static/admin/css/responsive.css
+WARNING 2025-06-05 22:46:17,483 basehttp 69159 123145570865152 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2025-06-05 22:46:17,487 log 69159 123145503707136 Not Found: /static/admin/img/search.svg
+WARNING 2025-06-05 22:46:17,488 basehttp 69159 123145503707136 "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+INFO 2025-06-05 22:49:12,155 autoreload 69159 140704515791296 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-05 22:49:13,105 autoreload 70588 140704515791296 Watching for file changes with StatReloader
+INFO 2025-06-05 22:49:17,878 basehttp 70588 123145459724288 "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 11112
+INFO 2025-06-05 22:49:17,916 basehttp 70588 123145476513792 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-06-05 22:49:17,921 basehttp 70588 123145510092800 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-06-05 22:49:17,922 basehttp 70588 123145459724288 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-06-05 22:49:17,924 basehttp 70588 123145493303296 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-06-05 22:49:17,925 basehttp 70588 123145526882304 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-06-05 22:49:17,929 basehttp 70588 123145459724288 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-06-05 22:49:17,930 basehttp 70588 123145543671808 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-06-05 22:49:17,930 basehttp 70588 123145510092800 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-06-05 22:49:17,937 basehttp 70588 123145459724288 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-06-05 22:49:17,937 basehttp 70588 123145526882304 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-06-05 22:49:17,939 basehttp 70588 123145493303296 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-06-05 22:49:17,941 basehttp 70588 123145543671808 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-06-05 22:49:17,945 basehttp 70588 123145476513792 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-06-05 22:49:17,947 basehttp 70588 123145510092800 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-06-05 22:49:17,976 basehttp 70588 123145510092800 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-06-05 22:49:17,977 basehttp 70588 123145476513792 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-06-05 22:49:17,985 basehttp 70588 123145510092800 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-06-05 22:49:18,061 basehttp 70588 123145510092800 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-06-05 22:49:18,061 basehttp 70588 123145476513792 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+WARNING 2025-06-05 22:49:18,135 log 70588 123145510092800 Not Found: /favicon.ico
+WARNING 2025-06-05 22:49:18,135 basehttp 70588 123145510092800 "GET /favicon.ico HTTP/1.1" 404 2851
+INFO 2025-06-05 22:49:23,764 basehttp 70588 123145510092800 "GET /admin/authtoken/ HTTP/1.1" 200 5524
+INFO 2025-06-05 22:49:23,841 basehttp 70588 123145510092800 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-06-05 22:49:23,855 basehttp 70588 123145510092800 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-06-05 22:49:25,192 basehttp 70588 123145510092800 "GET /admin/ HTTP/1.1" 200 10401
+INFO 2025-06-05 22:49:27,713 basehttp 70588 123145510092800 "GET /admin/customer_order/customer/ HTTP/1.1" 200 16400
+INFO 2025-06-05 22:49:27,784 basehttp 70588 123145510092800 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-05 22:49:27,793 basehttp 70588 123145510092800 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-06-05 22:49:27,867 basehttp 70588 123145510092800 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-06-05 22:49:27,867 basehttp 70588 123145476513792 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-06-05 22:49:31,520 basehttp 70588 123145510092800 "GET /admin/customer_order/orderitem/ HTTP/1.1" 200 12253
+INFO 2025-06-05 22:49:31,575 basehttp 70588 123145510092800 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-05 22:49:34,443 basehttp 70588 123145510092800 "GET /admin/customer_order/customer/ HTTP/1.1" 200 16400
+INFO 2025-06-05 22:49:34,491 basehttp 70588 123145510092800 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-05 22:49:34,562 log 70588 123145510092800 Not Found: /favicon.ico
+INFO 2025-06-05 22:49:34,563 basehttp 70588 123145510092800 - Broken pipe from ('127.0.0.1', 58849)
+INFO 2025-06-05 22:50:16,227 basehttp 70588 123145476513792 "GET /admin/customer_order/customer/add/ HTTP/1.1" 200 19438
+INFO 2025-06-05 22:50:16,295 basehttp 70588 123145476513792 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-06-05 22:50:16,301 basehttp 70588 123145493303296 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-05 22:50:16,327 basehttp 70588 123145476513792 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-06-05 22:50:16,328 basehttp 70588 123145493303296 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-06-05 22:50:16,337 basehttp 70588 123145476513792 "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+INFO 2025-06-05 22:50:16,348 basehttp 70588 123145526882304 "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 200 1480
+INFO 2025-06-05 22:50:16,350 basehttp 70588 123145543671808 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-06-05 22:50:16,351 basehttp 70588 123145493303296 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-06-05 22:50:16,359 basehttp 70588 123145476513792 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+WARNING 2025-06-05 22:50:16,520 log 70588 123145476513792 Not Found: /favicon.ico
+INFO 2025-06-05 22:50:16,520 basehttp 70588 123145476513792 - Broken pipe from ('127.0.0.1', 58847)
+INFO 2025-06-05 22:50:16,543 basehttp 70588 123145493303296 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-06-05 22:50:58,976 basehttp 70588 123145493303296 "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 2455
+INFO 2025-06-05 22:51:16,827 basehttp 70588 123145493303296 "POST /admin/customer_order/customer/add/ HTTP/1.1" 302 0
+INFO 2025-06-05 22:51:16,850 basehttp 70588 123145493303296 "GET /admin/customer_order/customer/add/ HTTP/1.1" 200 19757
+INFO 2025-06-05 22:51:16,903 basehttp 70588 123145493303296 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-05 22:51:17,013 log 70588 123145493303296 Not Found: /favicon.ico
+INFO 2025-06-05 22:51:17,013 basehttp 70588 123145493303296 - Broken pipe from ('127.0.0.1', 58848)
+INFO 2025-06-05 22:51:22,412 basehttp 70588 123145526882304 "GET /admin/customer_order/orderitem/ HTTP/1.1" 200 12253
+INFO 2025-06-05 22:51:22,469 basehttp 70588 123145526882304 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-05 22:51:22,484 basehttp 70588 123145526882304 - Broken pipe from ('127.0.0.1', 58850)
+INFO 2025-06-05 22:53:14,523 basehttp 70588 123145459724288 "GET /admin/customer_order/product/ HTTP/1.1" 200 12960
+INFO 2025-06-05 22:53:14,589 basehttp 70588 123145459724288 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-05 23:07:09,141 log 70588 123145459724288 Not Found: /
+WARNING 2025-06-05 23:07:09,142 basehttp 70588 123145459724288 "GET / HTTP/1.1" 404 2800
+INFO 2025-06-05 23:07:10,736 basehttp 70588 123145459724288 "GET /admin/customer_order/product/ HTTP/1.1" 200 12960
+INFO 2025-06-05 23:07:10,812 basehttp 70588 123145459724288 - Broken pipe from ('127.0.0.1', 59093)
+INFO 2025-06-05 23:16:05,553 basehttp 70588 123145476513792 "GET /admin/customer_order/product/ HTTP/1.1" 200 12960
+INFO 2025-06-05 23:16:05,606 basehttp 70588 123145476513792 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-05 23:16:05,616 basehttp 70588 123145476513792 - Broken pipe from ('127.0.0.1', 59138)
+WARNING 2025-06-05 23:16:05,711 log 70588 123145459724288 Not Found: /favicon.ico
+INFO 2025-06-05 23:16:05,713 basehttp 70588 123145459724288 - Broken pipe from ('127.0.0.1', 59139)
+INFO 2025-06-05 23:16:08,625 basehttp 70588 123145476513792 "GET /admin/customer_order/order/ HTTP/1.1" 200 12805
+INFO 2025-06-05 23:16:08,675 basehttp 70588 123145476513792 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-05 23:16:08,738 log 70588 123145493303296 Not Found: /favicon.ico
+INFO 2025-06-05 23:16:08,738 basehttp 70588 123145493303296 - Broken pipe from ('127.0.0.1', 59141)
+INFO 2025-06-05 23:16:11,260 basehttp 70588 123145476513792 "GET /admin/customer_order/order/add/ HTTP/1.1" 200 21663
+INFO 2025-06-05 23:16:11,362 basehttp 70588 123145476513792 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-05 23:16:11,375 basehttp 70588 123145459724288 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+INFO 2025-06-05 23:16:11,396 basehttp 70588 123145459724288 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-06-05 23:16:11,403 basehttp 70588 123145459724288 - Broken pipe from ('127.0.0.1', 59142)
+WARNING 2025-06-05 23:16:11,526 log 70588 123145493303296 Not Found: /favicon.ico
+INFO 2025-06-05 23:16:11,526 basehttp 70588 123145493303296 - Broken pipe from ('127.0.0.1', 59143)
+INFO 2025-06-05 23:16:32,251 basehttp 70588 123145476513792 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 537
+INFO 2025-06-05 23:16:37,738 basehttp 70588 123145476513792 "GET /admin/customer_order/product/ HTTP/1.1" 200 12960
+INFO 2025-06-05 23:16:37,809 basehttp 70588 123145476513792 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-05 23:16:39,892 basehttp 70588 123145476513792 "GET /admin/customer_order/product/add/ HTTP/1.1" 200 16498
+INFO 2025-06-05 23:16:39,953 basehttp 70588 123145476513792 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-05 23:16:43,597 basehttp 70588 123145476513792 "GET /admin/customer_order/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 8080
+INFO 2025-06-05 23:16:43,639 basehttp 70588 123145459724288 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-05 23:16:52,413 basehttp 70588 123145476513792 "GET /admin/customer_order/category/ HTTP/1.1" 200 12537
+INFO 2025-06-05 23:16:52,459 basehttp 70588 123145459724288 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-05 23:16:52,512 log 70588 123145459724288 Not Found: /favicon.ico
+INFO 2025-06-05 23:16:52,513 basehttp 70588 123145459724288 - Broken pipe from ('127.0.0.1', 59148)
+INFO 2025-06-06 07:02:32,455 autoreload 2152 140704325650944 Watching for file changes with StatReloader
+WARNING 2025-06-06 07:02:46,725 log 2152 123145556443136 Not Found: /categories
+WARNING 2025-06-06 07:02:46,727 basehttp 2152 123145556443136 "GET /categories HTTP/1.1" 404 2848
+WARNING 2025-06-06 07:02:46,923 log 2152 123145556443136 Not Found: /favicon.ico
+WARNING 2025-06-06 07:02:46,924 basehttp 2152 123145556443136 "GET /favicon.ico HTTP/1.1" 404 2851
+WARNING 2025-06-06 07:03:07,125 log 2152 123145556443136 Not Found: /api/v1/
+WARNING 2025-06-06 07:03:07,126 basehttp 2152 123145556443136 "GET /api/v1/ HTTP/1.1" 404 5832
+INFO 2025-06-06 07:03:19,425 basehttp 2152 123145556443136 "GET /api/v1/products HTTP/1.1" 301 0
+INFO 2025-06-06 07:03:19,439 basehttp 2152 123145573232640 "GET /api/v1/products/ HTTP/1.1" 200 52
+WARNING 2025-06-06 07:03:19,510 log 2152 123145590022144 Not Found: /favicon.ico
+WARNING 2025-06-06 07:03:19,510 basehttp 2152 123145590022144 "GET /favicon.ico HTTP/1.1" 404 2851
+INFO 2025-06-06 07:03:28,419 basehttp 2152 123145573232640 "GET /api/v1/categories HTTP/1.1" 301 0
+INFO 2025-06-06 07:03:28,428 basehttp 2152 123145606811648 "GET /api/v1/categories/ HTTP/1.1" 200 52
+WARNING 2025-06-06 07:03:28,480 log 2152 123145590022144 Not Found: /favicon.ico
+WARNING 2025-06-06 07:03:28,480 basehttp 2152 123145590022144 "GET /favicon.ico HTTP/1.1" 404 2851
+INFO 2025-06-06 07:09:48,579 basehttp 2152 123145556443136 "GET /api/v1/products/ HTTP/1.1" 200 52
+WARNING 2025-06-06 07:09:48,643 log 2152 123145573232640 Not Found: /favicon.ico
+WARNING 2025-06-06 07:09:48,643 basehttp 2152 123145573232640 "GET /favicon.ico HTTP/1.1" 404 2851
+WARNING 2025-06-06 07:09:56,308 log 2152 123145556443136 Not Found: /api/v1/customers
+WARNING 2025-06-06 07:09:56,309 basehttp 2152 123145556443136 "GET /api/v1/customers HTTP/1.1" 404 5859
+INFO 2025-06-06 07:10:04,092 basehttp 2152 123145556443136 "GET /api/v1/categories/ HTTP/1.1" 200 52
+WARNING 2025-06-06 07:10:04,147 log 2152 123145573232640 Not Found: /favicon.ico
+WARNING 2025-06-06 07:10:04,147 basehttp 2152 123145573232640 "GET /favicon.ico HTTP/1.1" 404 2851
+WARNING 2025-06-06 07:10:09,347 log 2152 123145556443136 Not Found: /api/v1/customers
+WARNING 2025-06-06 07:10:09,347 basehttp 2152 123145556443136 "GET /api/v1/customers HTTP/1.1" 404 5859
+WARNING 2025-06-06 07:10:24,997 log 2152 123145556443136 Not Found: /api/auth/
+WARNING 2025-06-06 07:10:24,998 basehttp 2152 123145556443136 "GET /api/auth/ HTTP/1.1" 404 3219
+WARNING 2025-06-06 07:10:29,875 log 2152 123145556443136 Not Found: /api/auth
+WARNING 2025-06-06 07:10:29,875 basehttp 2152 123145556443136 "GET /api/auth HTTP/1.1" 404 2842
+WARNING 2025-06-06 07:10:39,065 log 2152 123145556443136 Not Found: /api/auth/
+WARNING 2025-06-06 07:10:39,066 basehttp 2152 123145556443136 "GET /api/auth/ HTTP/1.1" 404 3219
+INFO 2025-06-06 07:10:46,763 basehttp 2152 123145556443136 "GET /api/auth/login HTTP/1.1" 301 0
+INFO 2025-06-06 07:10:46,785 basehttp 2152 123145590022144 "GET /api/auth/login/ HTTP/1.1" 200 2700
+INFO 2025-06-06 07:10:46,831 basehttp 2152 123145590022144 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-06-06 07:10:46,840 basehttp 2152 123145556443136 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-06-06 07:10:46,845 basehttp 2152 123145606811648 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-06-06 07:10:46,856 basehttp 2152 123145623601152 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-06-06 07:10:46,931 basehttp 2152 123145556443136 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-06-06 07:51:10,102 autoreload 11833 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 07:51:13,693 basehttp 11833 123145341779968 "GET /api/auth/login/ HTTP/1.1" 200 2700
+INFO 2025-06-06 07:51:17,600 basehttp 11833 123145341779968 "POST /api/auth/login/ HTTP/1.1" 200 2958
+INFO 2025-06-06 07:51:27,096 basehttp 11833 123145341779968 "POST /api/auth/login/ HTTP/1.1" 200 2939
+INFO 2025-06-06 07:51:44,307 basehttp 11833 123145341779968 "POST /api/auth/login/ HTTP/1.1" 302 0
+WARNING 2025-06-06 07:51:44,317 log 11833 123145341779968 Not Found: /accounts/profile/
+WARNING 2025-06-06 07:51:44,317 basehttp 11833 123145341779968 "GET /accounts/profile/ HTTP/1.1" 404 2869
+INFO 2025-06-06 07:52:23,547 basehttp 11833 123145341779968 "GET /api/v1/customers/profile HTTP/1.1" 301 0
+INFO 2025-06-06 07:52:24,028 basehttp 11833 123145358569472 "GET /api/v1/customers/profile/ HTTP/1.1" 200 236
+WARNING 2025-06-06 07:52:24,090 log 11833 123145375358976 Not Found: /favicon.ico
+WARNING 2025-06-06 07:52:24,091 basehttp 11833 123145375358976 "GET /favicon.ico HTTP/1.1" 404 2851
+WARNING 2025-06-06 07:52:40,251 log 11833 123145358569472 Not Found: /api/v1/customers
+WARNING 2025-06-06 07:52:40,251 basehttp 11833 123145358569472 "GET /api/v1/customers HTTP/1.1" 404 5859
+INFO 2025-06-06 07:52:44,299 basehttp 11833 123145358569472 "GET /api/v1/customers/profile/ HTTP/1.1" 200 236
+WARNING 2025-06-06 07:52:44,358 log 11833 123145375358976 Not Found: /favicon.ico
+WARNING 2025-06-06 07:52:44,359 basehttp 11833 123145375358976 "GET /favicon.ico HTTP/1.1" 404 2851
+WARNING 2025-06-06 07:52:46,899 log 11833 123145375358976 Not Found: /favicon.ico
+WARNING 2025-06-06 07:52:46,899 basehttp 11833 123145375358976 "GET /favicon.ico HTTP/1.1" 404 2851
+INFO 2025-06-06 08:02:06,996 autoreload 11833 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 08:02:07,895 autoreload 13891 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 08:02:20,241 basehttp 13891 123145409597440 "GET /api/auth/login/ HTTP/1.1" 200 2700
+INFO 2025-06-06 08:02:28,848 basehttp 13891 123145409597440 "POST /api/auth/login/ HTTP/1.1" 302 0
+WARNING 2025-06-06 08:02:28,856 log 13891 123145409597440 Not Found: /customer/profile/
+WARNING 2025-06-06 08:02:28,856 basehttp 13891 123145409597440 "GET /customer/profile/ HTTP/1.1" 404 2869
+WARNING 2025-06-06 08:02:28,916 log 13891 123145409597440 Not Found: /favicon.ico
+INFO 2025-06-06 08:02:28,917 basehttp 13891 123145409597440 - Broken pipe from ('127.0.0.1', 50279)
+INFO 2025-06-06 08:02:40,498 autoreload 13891 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 08:02:41,098 autoreload 13987 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 08:02:46,327 basehttp 13987 123145565466624 "GET /api/auth/login/ HTTP/1.1" 200 2700
+INFO 2025-06-06 08:02:55,830 basehttp 13987 123145565466624 "POST /api/auth/login/ HTTP/1.1" 302 0
+WARNING 2025-06-06 08:02:55,839 log 13987 123145565466624 Not Found: /api/v1/customer/profile/
+WARNING 2025-06-06 08:02:55,839 basehttp 13987 123145565466624 "GET /api/v1/customer/profile/ HTTP/1.1" 404 5883
+INFO 2025-06-06 08:03:16,755 autoreload 13987 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 08:03:17,233 autoreload 14096 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 08:03:18,610 autoreload 14096 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 08:03:19,071 autoreload 14105 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 08:03:20,195 basehttp 14105 123145354731520 "GET /api/auth/login/ HTTP/1.1" 200 2700
+INFO 2025-06-06 08:03:24,956 basehttp 14105 123145354731520 "POST /api/auth/login/ HTTP/1.1" 302 0
+INFO 2025-06-06 08:03:24,964 basehttp 14105 123145354731520 "GET /api/v1/customers/profile/ HTTP/1.1" 200 236
+WARNING 2025-06-06 08:03:25,528 log 14105 123145371521024 Not Found: /favicon.ico
+WARNING 2025-06-06 08:03:25,529 basehttp 14105 123145371521024 "GET /favicon.ico HTTP/1.1" 404 2851
+INFO 2025-06-06 08:03:45,364 basehttp 14105 123145354731520 "GET /admin/ HTTP/1.1" 200 10863
+INFO 2025-06-06 08:03:45,403 basehttp 14105 123145354731520 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:45,420 basehttp 14105 123145388310528 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:45,422 basehttp 14105 123145354731520 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:45,429 basehttp 14105 123145388310528 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:45,432 basehttp 14105 123145421889536 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:45,435 basehttp 14105 123145354731520 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:45,438 basehttp 14105 123145405100032 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-06-06 08:03:45,458 basehttp 14105 123145405100032 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-06-06 08:03:45,459 basehttp 14105 123145388310528 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-06-06 08:03:49,012 basehttp 14105 123145354731520 "GET /admin/customer_order/order/ HTTP/1.1" 200 12805
+INFO 2025-06-06 08:03:49,063 basehttp 14105 123145405100032 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-06-06 08:03:49,063 basehttp 14105 123145388310528 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:49,064 basehttp 14105 123145438679040 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:49,074 basehttp 14105 123145388310528 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:49,075 basehttp 14105 123145455468544 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:49,077 basehttp 14105 123145455468544 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:49,079 basehttp 14105 123145438679040 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:49,080 basehttp 14105 123145405100032 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:49,083 basehttp 14105 123145455468544 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:49,085 basehttp 14105 123145421889536 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:03:49,085 basehttp 14105 123145388310528 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-06-06 08:03:49,087 basehttp 14105 123145354731520 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:49,125 basehttp 14105 123145421889536 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-06-06 08:03:49,126 basehttp 14105 123145405100032 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+WARNING 2025-06-06 08:03:49,144 log 14105 123145421889536 Not Found: /favicon.ico
+INFO 2025-06-06 08:03:49,144 basehttp 14105 123145421889536 - Broken pipe from ('127.0.0.1', 50300)
+INFO 2025-06-06 08:03:50,578 basehttp 14105 123145354731520 "GET /admin/customer_order/orderitem/ HTTP/1.1" 200 12253
+INFO 2025-06-06 08:03:50,628 basehttp 14105 123145405100032 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:03:52,417 basehttp 14105 123145354731520 "GET /admin/customer_order/orderitem/add/ HTTP/1.1" 200 16075
+INFO 2025-06-06 08:03:52,463 basehttp 14105 123145405100032 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:03:52,466 basehttp 14105 123145388310528 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:52,478 basehttp 14105 123145388310528 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:52,479 basehttp 14105 123145405100032 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-06-06 08:03:52,489 basehttp 14105 123145405100032 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+INFO 2025-06-06 08:03:58,677 basehttp 14105 123145354731520 "GET /admin/customer_order/product/ HTTP/1.1" 200 12960
+INFO 2025-06-06 08:03:58,724 basehttp 14105 123145405100032 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:04:00,138 basehttp 14105 123145354731520 "GET /admin/customer_order/product/add/ HTTP/1.1" 200 16498
+INFO 2025-06-06 08:04:00,178 basehttp 14105 123145405100032 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:04:40,348 basehttp 14105 123145354731520 "GET /admin/customer_order/category/ HTTP/1.1" 200 12537
+INFO 2025-06-06 08:04:40,395 basehttp 14105 123145405100032 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:04:43,123 basehttp 14105 123145354731520 "GET /admin/customer_order/category/add/ HTTP/1.1" 200 15205
+INFO 2025-06-06 08:04:43,198 basehttp 14105 123145405100032 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:05:20,017 basehttp 14105 123145354731520 "GET /admin/customer_order/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 8080
+INFO 2025-06-06 08:05:20,062 basehttp 14105 123145405100032 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:05:20,067 basehttp 14105 123145388310528 - Broken pipe from ('127.0.0.1', 50298)
+INFO 2025-06-06 08:05:20,072 basehttp 14105 123145405100032 - Broken pipe from ('127.0.0.1', 50299)
+WARNING 2025-06-06 08:05:20,124 log 14105 123145438679040 Not Found: /favicon.ico
+INFO 2025-06-06 08:05:20,124 basehttp 14105 123145438679040 - Broken pipe from ('127.0.0.1', 50302)
+INFO 2025-06-06 08:05:23,557 basehttp 14105 123145354731520 "GET /admin/customer_order/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 8080
+INFO 2025-06-06 08:05:23,610 basehttp 14105 123145455468544 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-06 08:05:23,659 log 14105 123145455468544 Not Found: /favicon.ico
+INFO 2025-06-06 08:05:23,660 basehttp 14105 123145455468544 - Broken pipe from ('127.0.0.1', 50303)
+INFO 2025-06-06 08:05:35,357 basehttp 14105 123145354731520 "POST /admin/customer_order/category/add/ HTTP/1.1" 302 0
+INFO 2025-06-06 08:05:35,375 basehttp 14105 123145354731520 "GET /admin/customer_order/category/add/ HTTP/1.1" 200 15568
+INFO 2025-06-06 08:05:35,413 basehttp 14105 123145354731520 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:05:35,453 basehttp 14105 123145371521024 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+WARNING 2025-06-06 08:05:35,479 log 14105 123145371521024 Not Found: /favicon.ico
+INFO 2025-06-06 08:05:35,480 basehttp 14105 123145371521024 - Broken pipe from ('127.0.0.1', 50311)
+INFO 2025-06-06 08:06:21,417 basehttp 14105 123145354731520 "POST /admin/customer_order/category/add/ HTTP/1.1" 302 0
+INFO 2025-06-06 08:06:21,436 basehttp 14105 123145354731520 "GET /admin/customer_order/category/add/ HTTP/1.1" 200 15663
+INFO 2025-06-06 08:06:21,480 basehttp 14105 123145354731520 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-06 08:06:21,543 log 14105 123145371521024 Not Found: /favicon.ico
+INFO 2025-06-06 08:06:21,543 basehttp 14105 123145371521024 - Broken pipe from ('127.0.0.1', 50316)
+INFO 2025-06-06 08:06:31,177 basehttp 14105 123145354731520 "GET /admin/customer_order/product/ HTTP/1.1" 200 13354
+INFO 2025-06-06 08:06:31,234 basehttp 14105 123145354731520 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:06:32,997 basehttp 14105 123145354731520 "GET /admin/customer_order/product/add/ HTTP/1.1" 200 16661
+INFO 2025-06-06 08:06:33,040 basehttp 14105 123145388310528 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-06 08:06:33,107 log 14105 123145388310528 Not Found: /favicon.ico
+INFO 2025-06-06 08:06:33,109 basehttp 14105 123145388310528 - Broken pipe from ('127.0.0.1', 50317)
+INFO 2025-06-06 08:08:26,575 basehttp 14105 123145354731520 "POST /admin/customer_order/product/add/ HTTP/1.1" 200 17628
+INFO 2025-06-06 08:08:26,616 basehttp 14105 123145354731520 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:08:26,618 basehttp 14105 123145371521024 - Broken pipe from ('127.0.0.1', 50326)
+WARNING 2025-06-06 08:08:26,689 log 14105 123145388310528 Not Found: /favicon.ico
+INFO 2025-06-06 08:08:26,690 basehttp 14105 123145388310528 - Broken pipe from ('127.0.0.1', 50327)
+INFO 2025-06-06 08:08:51,621 basehttp 14105 123145354731520 "POST /admin/customer_order/product/add/ HTTP/1.1" 302 0
+INFO 2025-06-06 08:08:51,652 basehttp 14105 123145354731520 "GET /admin/customer_order/product/ HTTP/1.1" 200 16862
+INFO 2025-06-06 08:08:51,719 basehttp 14105 123145354731520 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:08:51,758 basehttp 14105 123145354731520 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+WARNING 2025-06-06 08:09:58,521 log 14105 123145371521024 Unauthorized: /api/v1/products/
+WARNING 2025-06-06 08:09:58,522 basehttp 14105 123145371521024 "GET /api/v1/products/ HTTP/1.1" 401 58
+INFO 2025-06-06 08:10:20,581 basehttp 14105 123145354731520 "GET /api/v1/products/ HTTP/1.1" 200 1207
+WARNING 2025-06-06 08:10:20,673 log 14105 123145388310528 Not Found: /favicon.ico
+WARNING 2025-06-06 08:10:20,675 basehttp 14105 123145388310528 "GET /favicon.ico HTTP/1.1" 404 2851
+INFO 2025-06-06 08:11:07,779 basehttp 14105 123145354731520 "GET /admin/customer_order/product/add/ HTTP/1.1" 200 16661
+INFO 2025-06-06 08:11:07,838 basehttp 14105 123145354731520 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 08:11:07,849 basehttp 14105 123145405100032 - Broken pipe from ('127.0.0.1', 50342)
+INFO 2025-06-06 08:11:07,850 basehttp 14105 123145438679040 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-06-06 08:11:07,851 basehttp 14105 123145421889536 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+WARNING 2025-06-06 08:11:07,927 log 14105 123145421889536 Not Found: /favicon.ico
+INFO 2025-06-06 08:11:07,927 basehttp 14105 123145421889536 - Broken pipe from ('127.0.0.1', 50343)
+INFO 2025-06-06 08:11:55,838 basehttp 14105 123145354731520 "POST /admin/customer_order/product/add/ HTTP/1.1" 302 0
+INFO 2025-06-06 08:11:55,866 basehttp 14105 123145354731520 "GET /admin/customer_order/product/add/ HTTP/1.1" 200 16966
+INFO 2025-06-06 08:11:55,924 basehttp 14105 123145438679040 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-06 08:11:55,981 log 14105 123145438679040 Not Found: /favicon.ico
+INFO 2025-06-06 08:11:55,982 basehttp 14105 123145438679040 - Broken pipe from ('127.0.0.1', 50344)
+INFO 2025-06-06 08:11:59,747 basehttp 14105 123145354731520 "GET /api/v1/products/ HTTP/1.1" 200 1631
+WARNING 2025-06-06 08:11:59,797 log 14105 123145388310528 Not Found: /favicon.ico
+WARNING 2025-06-06 08:11:59,797 basehttp 14105 123145388310528 "GET /favicon.ico HTTP/1.1" 404 2851
+INFO 2025-06-06 08:12:16,641 basehttp 14105 123145354731520 "GET /api/v1/products/199ca8c3-d358-43f1-b540-e0d1b110094b HTTP/1.1" 301 0
+INFO 2025-06-06 08:12:16,651 basehttp 14105 123145371521024 "GET /api/v1/products/199ca8c3-d358-43f1-b540-e0d1b110094b/ HTTP/1.1" 200 423
+WARNING 2025-06-06 08:12:16,702 log 14105 123145388310528 Not Found: /favicon.ico
+WARNING 2025-06-06 08:12:16,702 basehttp 14105 123145388310528 "GET /favicon.ico HTTP/1.1" 404 2851
+WARNING 2025-06-06 08:13:49,288 log 14105 123145354731520 Unauthorized: /api/v1/products/199ca8c3-d358-43f1-b540-e0d1b110094b/
+WARNING 2025-06-06 08:13:49,289 basehttp 14105 123145354731520 "GET /api/v1/products/199ca8c3-d358-43f1-b540-e0d1b110094b/ HTTP/1.1" 401 58
+INFO 2025-06-06 08:14:00,708 basehttp 14105 123145405100032 "GET /api/v1/products HTTP/1.1" 301 0
+WARNING 2025-06-06 08:14:04,160 log 14105 123145421889536 Unauthorized: /api/v1/products/
+WARNING 2025-06-06 08:14:04,161 basehttp 14105 123145421889536 "GET /api/v1/products/ HTTP/1.1" 401 58
+WARNING 2025-06-06 08:15:39,057 log 14105 123145371521024 Unauthorized: /api/v1/products/199ca8c3-d358-43f1-b540-e0d1b110094b/
+WARNING 2025-06-06 08:15:39,058 basehttp 14105 123145371521024 "GET /api/v1/products/199ca8c3-d358-43f1-b540-e0d1b110094b/ HTTP/1.1" 401 58
+WARNING 2025-06-06 08:16:22,022 log 14105 123145438679040 Unauthorized: /api/v1/products/199ca8c3-d358-43f1-b540-e0d1b110094b/
+WARNING 2025-06-06 08:16:22,023 basehttp 14105 123145438679040 "GET /api/v1/products/199ca8c3-d358-43f1-b540-e0d1b110094b/ HTTP/1.1" 401 58
+WARNING 2025-06-06 08:19:44,119 log 14105 123145455468544 Bad Request: /api/v1/customers/register/
+WARNING 2025-06-06 08:19:44,121 basehttp 14105 123145455468544 "POST /api/v1/customers/register/ HTTP/1.1" 400 48
+WARNING 2025-06-06 08:20:22,333 log 14105 123145472258048 Bad Request: /api/v1/customers/register/
+WARNING 2025-06-06 08:20:22,333 basehttp 14105 123145472258048 "POST /api/v1/customers/register/ HTTP/1.1" 400 61
+INFO 2025-06-06 08:20:48,045 basehttp 14105 123145354731520 "POST /api/v1/customers/register/ HTTP/1.1" 201 99
+ERROR 2025-06-06 08:23:54,302 log 14105 123145371521024 Internal Server Error: /api/auth/login
+Traceback (most recent call last):
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-06-06 08:23:54,307 basehttp 14105 123145371521024 "POST /api/auth/login HTTP/1.1" 500 66130
+WARNING 2025-06-06 08:24:45,200 log 14105 123145354731520 Forbidden (CSRF cookie not set.): /api/auth/login/
+WARNING 2025-06-06 08:24:45,201 basehttp 14105 123145354731520 "POST /api/auth/login/ HTTP/1.1" 403 2855
+WARNING 2025-06-06 08:25:30,434 log 14105 123145388310528 Forbidden (CSRF cookie not set.): /api/auth/login/
+WARNING 2025-06-06 08:25:30,435 basehttp 14105 123145388310528 "POST /api/auth/login/ HTTP/1.1" 403 2855
+WARNING 2025-06-06 08:25:57,576 log 14105 123145405100032 Forbidden (CSRF cookie not set.): /api/auth/login/
+WARNING 2025-06-06 08:25:57,576 basehttp 14105 123145405100032 "POST /api/auth/login/ HTTP/1.1" 403 2855
+WARNING 2025-06-06 08:27:24,953 log 14105 123145421889536 Forbidden (CSRF cookie not set.): /api/auth/login/
+WARNING 2025-06-06 08:27:24,954 basehttp 14105 123145421889536 "POST /api/auth/login/ HTTP/1.1" 403 2855
+INFO 2025-06-06 08:28:56,257 autoreload 14105 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 08:28:57,249 autoreload 18801 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 08:30:02,045 autoreload 18801 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 08:30:03,113 autoreload 19003 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 08:33:18,042 autoreload 19003 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/customer_order/views.py changed, reloading.
+INFO 2025-06-06 08:33:18,684 autoreload 19602 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 08:33:46,293 autoreload 19602 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/customer_order/urls.py changed, reloading.
+INFO 2025-06-06 08:33:47,031 autoreload 19691 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 08:33:59,834 basehttp 19691 123145502429184 "POST /api/v1/auth/login/ HTTP/1.1" 200 194
+WARNING 2025-06-06 08:35:05,980 log 19691 123145502429184 Unauthorized: /api/v1/products/
+WARNING 2025-06-06 08:35:05,981 basehttp 19691 123145502429184 "GET /api/v1/products/ HTTP/1.1" 401 58
+INFO 2025-06-06 08:35:19,904 basehttp 19691 123145519218688 "GET /admin/customer_order/order/ HTTP/1.1" 200 12805
+INFO 2025-06-06 08:35:19,995 basehttp 19691 123145502429184 - Broken pipe from ('127.0.0.1', 50632)
+INFO 2025-06-06 08:35:20,004 basehttp 19691 123145519218688 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-06 08:35:20,034 log 19691 123145519218688 Not Found: /favicon.ico
+INFO 2025-06-06 08:35:20,035 basehttp 19691 123145519218688 - Broken pipe from ('127.0.0.1', 50631)
+INFO 2025-06-06 08:36:25,489 basehttp 19691 123145502429184 "GET /api/v1/products/199ca8c3-d358-43f1-b540-e0d1b110094b/ HTTP/1.1" 200 423
+INFO 2025-06-06 08:36:32,695 basehttp 19691 123145536008192 "GET /api/v1/products/199ca8c3-d358-43f1-b540-e0d1b110094b/ HTTP/1.1" 200 423
+INFO 2025-06-06 08:36:40,141 basehttp 19691 123145552797696 "GET /api/v1/products/ HTTP/1.1" 200 1631
+INFO 2025-06-06 09:15:09,464 basehttp 19691 123145502429184 "GET /admin/customer_order/orderitem/ HTTP/1.1" 200 12665
+INFO 2025-06-06 09:15:09,534 basehttp 19691 123145536008192 - Broken pipe from ('127.0.0.1', 51241)
+INFO 2025-06-06 09:15:09,535 basehttp 19691 123145502429184 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-06 09:15:09,617 log 19691 123145502429184 Not Found: /favicon.ico
+INFO 2025-06-06 09:15:09,618 basehttp 19691 123145502429184 - Broken pipe from ('127.0.0.1', 51239)
+INFO 2025-06-06 09:15:10,953 basehttp 19691 123145552797696 "GET /admin/customer_order/orderitem/add/ HTTP/1.1" 200 16269
+INFO 2025-06-06 09:15:11,003 basehttp 19691 123145552797696 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 09:15:14,708 basehttp 19691 123145552797696 "GET /admin/customer_order/order/ HTTP/1.1" 200 12805
+INFO 2025-06-06 09:15:14,766 basehttp 19691 123145502429184 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 09:15:16,405 basehttp 19691 123145552797696 "GET /admin/customer_order/order/add/ HTTP/1.1" 200 21960
+INFO 2025-06-06 09:15:16,450 basehttp 19691 123145502429184 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 09:15:16,454 basehttp 19691 123145502429184 "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+INFO 2025-06-06 09:15:29,034 basehttp 19691 123145502429184 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 537
+INFO 2025-06-06 09:15:47,440 basehttp 19691 123145552797696 "POST /admin/customer_order/order/add/ HTTP/1.1" 200 24953
+INFO 2025-06-06 09:15:47,476 basehttp 19691 123145502429184 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-06-06 09:16:05,219 log 19691 123145552797696 Internal Server Error: /admin/customer_order/order/add/
+Traceback (most recent call last):
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: orders.total_amount
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1984, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1894, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1314, in save_model
+    obj.save()
+    ~~~~~~~~^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/sil_prep/customer_order/models.py", line 164, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/models/query.py", line 1864, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: orders.total_amount
+ERROR 2025-06-06 09:16:05,234 basehttp 19691 123145552797696 "POST /admin/customer_order/order/add/ HTTP/1.1" 500 213729
+INFO 2025-06-06 09:16:16,468 basehttp 19691 123145552797696 "POST /admin/customer_order/order/add/ HTTP/1.1" 200 24953
+INFO 2025-06-06 09:16:16,504 basehttp 19691 123145502429184 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-06-06 09:16:16,580 log 19691 123145502429184 Not Found: /favicon.ico
+INFO 2025-06-06 09:16:16,581 basehttp 19691 123145502429184 - Broken pipe from ('127.0.0.1', 51243)
+INFO 2025-06-06 09:28:23,030 autoreload 27255 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:28:28,648 autoreload 27255 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/customer_order/views.py changed, reloading.
+INFO 2025-06-06 09:28:29,307 autoreload 27277 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:31:42,916 autoreload 27277 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 09:31:43,837 autoreload 27861 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:32:15,482 autoreload 27861 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 09:32:16,313 autoreload 27955 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:32:55,098 autoreload 27955 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 09:32:55,515 autoreload 28074 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:33:04,899 autoreload 28074 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 09:33:05,373 autoreload 28107 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:34:13,439 autoreload 28107 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 09:34:14,216 autoreload 28309 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:34:56,958 autoreload 28309 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 09:34:57,345 autoreload 28442 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:35:12,721 autoreload 28442 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 09:35:13,102 autoreload 28490 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:35:19,382 autoreload 28490 140704325650944 /Users/mac/MutableTechEnterprises/sil_prep/sil_prep/sil_prep/settings.py changed, reloading.
+INFO 2025-06-06 09:35:19,762 autoreload 28508 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:36:40,959 autoreload 28776 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:39:20,354 autoreload 29298 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:44:21,261 autoreload 30209 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:44:49,419 basehttp 30209 123145343062016 "POST /admin/customer_order/order/add/ HTTP/1.1" 200 29911
+INFO 2025-06-06 09:44:49,477 basehttp 30209 123145343062016 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-06 09:44:49,487 basehttp 30209 123145376641024 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-06-06 09:44:49,483 basehttp 30209 123145359851520 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+WARNING 2025-06-06 09:44:49,561 log 30209 123145359851520 Not Found: /favicon.ico
+INFO 2025-06-06 09:44:49,561 basehttp 30209 123145359851520 - Broken pipe from ('127.0.0.1', 51635)
+INFO 2025-06-06 09:45:00,245 basehttp 30209 123145343062016 "GET /admin/ HTTP/1.1" 200 19161
+WARNING 2025-06-06 09:45:00,355 log 30209 123145376641024 Not Found: /favicon.ico
+INFO 2025-06-06 09:45:00,355 basehttp 30209 123145376641024 - Broken pipe from ('127.0.0.1', 51636)
+ERROR 2025-06-06 09:45:10,688 log 30209 123145343062016 Internal Server Error: /admin/oidc_provider/code/
+Traceback (most recent call last):
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: oidc_provider_code
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/admin/options.py", line 2024, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/admin/options.py", line 867, in get_changelist_instance
+    return ChangeList(
+        request,
+    ...<12 lines>...
+        self.search_help_text,
+    )
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/admin/views/main.py", line 146, in __init__
+    self.get_results(request)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/contrib/admin/views/main.py", line 313, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
+    return c()
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/models/query.py", line 604, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 644, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/models/sql/query.py", line 626, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: oidc_provider_code
+ERROR 2025-06-06 09:45:10,700 basehttp 30209 123145343062016 "GET /admin/oidc_provider/code/ HTTP/1.1" 500 194220
+INFO 2025-06-06 09:45:13,622 basehttp 30209 123145343062016 "GET /admin/ HTTP/1.1" 200 19161
+INFO 2025-06-06 09:49:12,748 autoreload 31085 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 09:49:19,257 basehttp 31085 123145585381376 "POST /admin/customer_order/order/add/ HTTP/1.1" 302 0
+INFO 2025-06-06 09:49:19,305 basehttp 31085 123145585381376 "GET /admin/login/?next=/admin/customer_order/order/add/ HTTP/1.1" 200 4220
+INFO 2025-06-06 09:49:19,378 basehttp 31085 123145585381376 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-06-06 10:18:18,020 autoreload 36320 140704325650944 Watching for file changes with StatReloader
+INFO 2025-06-06 10:26:57,325 autoreload 37857 140704325650944 Watching for file changes with StatReloader
+WARNING 2025-06-06 10:27:39,392 log 37857 123145510649856 Unauthorized: /api/v1/products/
+WARNING 2025-06-06 10:27:39,392 basehttp 37857 123145510649856 "GET /api/v1/products/ HTTP/1.1" 401 58
+WARNING 2025-06-06 10:27:39,477 log 37857 123145527439360 Not Found: /favicon.ico
+WARNING 2025-06-06 10:27:39,478 basehttp 37857 123145527439360 "GET /favicon.ico HTTP/1.1" 404 3001
+WARNING 2025-06-06 10:40:24,157 log 40152 140704325650944 Bad Request: /api/v1/orders/
+ERROR 2025-06-06 10:40:25,042 log 40152 140704325650944 Internal Server Error: /api/v1/orders/
+Traceback (most recent call last):
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/mac/MutableTechEnterprises/sil_prep/sil_prep/customer_order/views.py", line 229, in perform_create
+    order = serializer.save(
+        customer=self.request.user,
+        total_amount=total_amount,
+        shipping_address=self.request.data.get('shipping_address', '')
+    )
+  File "/Users/mac/MutableTechEnterprises/sil_prep/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "/Users/mac/MutableTechEnterprises/sil_prep/sil_prep/customer_order/serializers.py", line 183, in create
+    order = Order.objects.create(
+        customer=customer,
+        total_amount=Decimal('0.00'),
+        **validated_data
+    )
+TypeError: django.db.models.query.QuerySet.create() got multiple values for keyword argument 'customer'
