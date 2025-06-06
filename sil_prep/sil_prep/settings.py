@@ -39,8 +39,15 @@ ROOT_URLCONF = 'sil_prep.urls'
 # Database - SQLite Configuration
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DATABASE_NAME'),
+        'USER': os.environ.get('DATABASE_USER'),
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
+        'HOST': os.environ.get('DATABASE_HOST'),
+        'PORT': os.environ.get('DATABASE_PORT'),
+        'OPTIONS': {
+            'charset': 'utf8',
+        },
     }
 }
 
@@ -128,10 +135,10 @@ EMAIL_PORT = int(os.environ.get('EMAIL_PORT', '465'))
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', '')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
-DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', 'sil@mutabletech.co.ke')
-ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL', 'admin@mutabletech.co.ke')
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
+ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL')
 
-AFRICAS_TALKING_API_KEY = os.environ.get('AFRICAS_TALKING_API_KEY', 'atsk_4de4a3ef413bcb7d81c555b27cf83b40422d0e3000e010b941d6146f39d6f8bc297cb903')
+AFRICAS_TALKING_API_KEY = os.environ.get('AFRICAS_TALKING_API_KEY')
 AFRICAS_TALKING_USERNAME = os.environ.get('AFRICAS_TALKING_USERNAME', 'sandbox')
 
 CORS_ALLOWED_ORIGINS = [
