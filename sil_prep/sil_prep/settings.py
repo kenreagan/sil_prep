@@ -98,6 +98,22 @@ OAUTH2_PROVIDER = {
     'OAUTH2_BACKEND_CLASS': 'oauth2_provider.oauth2_backends.JSONOAuthLibCore',
 }
 
+
+OIDCOP_CONFIG = {
+    'issuer': OIDC_PROVIDER.get('ISSUER', 'http://localhost:8000'),
+    'subject_types_supported': ['public'],
+    'id_token_signing_alg_values_supported': ['RS256'],
+    'response_types_supported': ['code', 'id_token', 'token id_token'],
+    'scopes_supported': ['openid', 'profile', 'email'],
+    'token_endpoint_auth_methods_supported': ['client_secret_post', 'client_secret_basic'],
+    'claims_supported': [
+        'sub', 'name', 'given_name', 'family_name', 'preferred_username',
+        'email', 'email_verified', 'picture', 'locale'
+    ],
+    'grant_types_supported': ['authorization_code', 'implicit', 'refresh_token'],
+}
+
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
