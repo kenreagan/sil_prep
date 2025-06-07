@@ -52,7 +52,7 @@ OIDC_PROVIDER = {
     'SCOPES': ['openid', 'email', 'profile'],
     'OAUTH2_VALIDATOR_CLASS': 'customer_order.oauth_validator.CustomOAuth2Validator',
     'ID_TOKEN_EXPIRE': 3600,
-    'ISSUER': 'http://localhost:8000',
+    'ISSUER': 'http://localhost:9000',
     'PKCE_REQUIRED': False,
 }
 
@@ -97,7 +97,7 @@ OAUTH2_PROVIDER = {
 
 
 OIDCOP_CONFIG = {
-    'issuer': OIDC_PROVIDER.get('ISSUER', 'http://localhost:8000'),
+    'issuer': OIDC_PROVIDER.get('ISSUER', 'http://localhost:9000'),
     'subject_types_supported': ['public'],
     'id_token_signing_alg_values_supported': ['RS256'],
     'response_types_supported': ['code', 'id_token', 'token id_token'],
